@@ -18,7 +18,8 @@ CREATE TABLE `保养记录表` ( <br/>
  CREATE TABLE `保养项目表` (<br/>
   `项目ID` int(11) NOT NULL,<br/>
   `设备ID` int(11) DEFAULT NULL,<br/>
-  `保养内容` varchar(45) DEFAULT NULL,<br/>
+
+`保养内容` varchar(45) DEFAULT NULL,<br/>
   PRIMARY KEY (`项目ID`)<br/>
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;<br/>
 3保养消耗表<br/>
@@ -59,11 +60,14 @@ SELECT * FROM 设备保养系统.保养记录表<br/>
 where 保养记录ID=(select 保养记录ID from 设备保养系统.保养消耗表<br/> 
 where 材料ID='1');<br/>
 ![](/0.png)
+
 SELECT * FROM 设备保养系统.保养消耗表<br/>
 where 材料ID='1';<br/>
 ![](/1.png)
+
 SELECT * FROM 设备保养系统.保养项目表<br/>
 where 设备ID='1';<br/>
+![](/2.png)
 
 2.查询设备到期<br/>
 Select 设备ID from设备保养系统.设备类型表<br/>
