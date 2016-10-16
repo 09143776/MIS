@@ -75,7 +75,7 @@ Where 365-datediff(now(),(select date from 设备保养系统.保养类型表))<
 ![](/3.jpg)
 
 3.E-R图
-图上传到附件中
+![](/4.png)
 
 AXURE8.0模型地址： (http://4pzrab.axshare.com)<br/>
 附件地址：(http://pan.baidu.com/s/1gfbT1IF)
