@@ -8,7 +8,7 @@ CREATE TABLE `保养记录表` ( <br/>
   `项目ID` int(11) DEFAULT NULL,<br/>
   `保养人` varchar(45) DEFAULT NULL,<br/>
   `时间` varchar(45) DEFAULT NULL,<br/>
-  `保养内容` varchar(45) DEFAULT NULL,<br/>
+>  `保养内容` varchar(45) DEFAULT NULL,<br/>
   `设备ID` int(11) DEFAULT NULL,<br/>
   PRIMARY KEY (`保养记录ID`),<br/>
   KEY `设备名称_idx` (`设备名称`),<br/>
@@ -18,7 +18,7 @@ CREATE TABLE `保养记录表` ( <br/>
  CREATE TABLE `保养项目表` (<br/>
   `项目ID` int(11) NOT NULL,<br/>
   `设备ID` int(11) DEFAULT NULL,<br/>
-
+<
 `保养内容` varchar(45) DEFAULT NULL,<br/>
   PRIMARY KEY (`项目ID`)<br/>
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;<br/>
@@ -74,7 +74,7 @@ Select 设备ID from设备保养系统.设备类型表<br/>
 Where 365-datediff(now(),(select date from 设备保养系统.保养类型表))<10;<br/>
 ![](/3.jpg)
 
-3.E-R图
+3.E-R图<br/>
 ![](/4.png)
 
 AXURE8.0模型地址： (http://4pzrab.axshare.com)<br/>
