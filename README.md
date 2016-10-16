@@ -58,7 +58,7 @@ CREATE TABLE `设备类型表` (<br/>
 SELECT * FROM 设备保养系统.保养记录表<br/>
 where 保养记录ID=(select 保养记录ID from 设备保养系统.保养消耗表<br/> 
 where 材料ID='1');<br/>
-
+!(/0.png)
 SELECT * FROM 设备保养系统.保养消耗表<br/>
 where 材料ID='1';<br/>
 
