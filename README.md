@@ -61,7 +61,7 @@ where 材料ID='1');<br/>
 ![](/0.png)
 SELECT * FROM 设备保养系统.保养消耗表<br/>
 where 材料ID='1';<br/>
-
+![](/1.png)
 SELECT * FROM 设备保养系统.保养项目表<br/>
 where 设备ID='1';<br/>
 
