@@ -72,6 +72,7 @@ where 设备ID='1';<br/>
 2.查询设备到期<br/>
 Select 设备ID from设备保养系统.设备类型表<br/>
 Where 365-datediff(now(),(select date from 设备保养系统.保养类型表))<10;<br/>
+![](/3.png)
 
 3.E-R图
 图上传到附件中
