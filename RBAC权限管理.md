@@ -16,7 +16,7 @@ OR
 (cp.PrivilegeMaster = 'CF_User' AND cp.PrivilegeMasterKey = (SELECT UserID FROM cf_user WHERE LoginName = 'test2')))
 AND cp.PrivilegeOperation = 'Permit' AND cp.PrivilegeAccess = 'Sys_Menu';
 <h2>2.结果截图</h2>
-![结果截图](/1.png)
+![结果截图](/RABC1.png)
 <h2>3.伪代码:</h2>
       1、根据名称查找人员ID:UserID
       2、根据人员ID:UserID查找改人员所对应的角色集合RoleIDs
@@ -46,7 +46,7 @@ SELECT cp.PrivilegeMaster AS '角色',
                AND
                cp.PrivilegeOperation = 'Permit' AND cp.PrivilegeAccess = 'Sys_Button' AND sm.MenuName = '订单';
 <h2>2.结果截图</h2>
-![结果截图](/2.png)
+![结果截图](/RABC2.png)
 <h2>3.伪代码:</h2>
       1、根据名称查找人员IDUserID
       2、根据人员IDUserID查找改人员所对应的角色集合RoleIDs
