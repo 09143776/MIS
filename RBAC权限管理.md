@@ -48,11 +48,11 @@ AND cp.PrivilegeOperation = 'Permit' AND cp.PrivilegeAccess = 'Sys_Menu';
 <h2>2.结果截图</h2>
 ![结果截图](/RABC2.png)
 3.伪代码:
-1、根据名称查找人员IDUserID
-2、根据人员IDUserID查找改人员所对应的角色集合RoleIDs
-3、权限表 LEFT JOIN 按钮表 LEFT JOIN 页面表并查找
-              角色为CF_Role   AND   角色ID在角色集合RoleIDs中
+  1、根据名称查找人员IDUserID
+  2、根据人员IDUserID查找改人员所对应的角色集合RoleIDs
+  3、权限表 LEFT JOIN 按钮表 LEFT JOIN 页面表并查找
+   &emsp;&emsp;角色为CF_Role   AND   角色ID在角色集合RoleIDs中
                OR
              角色为CF_User   AND   人员ID为UserID
-             AND 权限属性为Permit   AND   权限为Sys_Button AND 菜单名字为订单的数据
+             AND 权限属性为Permit   AND   权限为Sys_Button AND 菜单名字为订单的数据&emsp;&emsp;
                
